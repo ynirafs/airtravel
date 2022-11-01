@@ -290,7 +290,7 @@ footer {
     padding: 1rem 0;
 }
 
-footer .left-menu, .right-menu {
+footer .left-menu, footer .right-menu {
     display: flex;
 }
 
