@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>airtravel</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--MAIN CONTAINER-->
+    <main class="container">
+        <!--TOP BAR-->
+        <div id="top" class="top-bar">
+            <h3 class="capitalize intro">introducing the new AirTravel</h3>
+            <p class="capitalize">learn more</p>
+        </div>
+
+        <!--NAVBAR-->
+        <nav class="navbar">
+            <!--LOGO-->
+            <div>
+                <h1>airtravel</h1>
+            </div>
+
+            <!--SEARCH BAR-->
+            <div class="search">
+                <form>
+                    <div class="input-container">
+                        <input type="text" placeholder="Search Properties">
+                    </div>
+                    <div>
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="menu">
+                <ul class="nav-menu">
+                    <li><a onclick="closeMenu()" href="#listings" class="nav-link capitalize">listings</a></li>
+                    <li><a onclick="closeMenu()" href="#featured" class="nav-link capitalize">featured</a></li>
+                    <li><a onclick="closeMenu()" href="#popular" class="nav-link capitalize">popular</a></li>
+                </ul>
+                <!--MOBILE MENU ICON-->
+                <div class="mobile" onclick="mobileMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!--SORT BAR-->
+        <div class="sort-bar">
+            <div>
+                <i class="fa-solid fa-house-chimney"></i>
+                <p class="capitalize">house</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-snowflake"></i>
+                <p class="capitalize">arctic</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-rocket"></i>
+                <p class="capitalize">space</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-tree"></i>
+                <p class="capitalize">trees</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-building"></i>
+                <p class="capitalize">city</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-campground"></i>
+                <p class="capitalize">camping</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <p class="capitalize">beach</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-volleyball"></i>
+                <p class="capitalize">games</p>
+            </div>
+        </div>
+
+        <!--PROPERTIES-->
+        <div id="listings" class="listings">
+            <!--PROPERTY 1-->
+            <div class="card">
+                <img 
+                    src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuc2lvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+                    alt="/"
+                >
+                <div>
+                    <div class="card-title">
+                        <h4 class="capitalize">miami, florida</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p class="capitalize"><span class="grey">hosted by reality group, LLC</span></p>
+                    <p class="capitalize"><span class="grey">Jun 1-7</span></p>
+                    <p>$749/night</p>
+                </div>
+            </div>
+            <!--PROPERTY 2-->
+            <div class="card">
+                <img 
+                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hbnNpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" 
+                    alt="/"
+                >
+                <div>
+                    <div class="card-title">
+                        <h4 class="capitalize">city, state</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p class="capitalize"><span class="grey">hosted by reality group, LLC</span></p>
+                    <p class="capitalize"><span class="grey">Jun 1-7</span></p>
+                    <p>$749/night</p>
+                </div>
+            </div>
+            <!--PROPERTY 3-->
+            <div class="card">
+                <img 
+                    src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" 
+                    alt="/"
+                >
+                <div>
+                    <div class="card-title">
+                        <h4 class="capitalize">city, state</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p class="capitalize"><span class="grey">hosted by reality group, LLC</span></p>
+                    <p class="capitalize"><span class="grey">Jun 1-7</span></p>
+                    <p>$749/night</p>
+                </div>
+            </div>
+            <!--PROPERTY 4-->
+            <div class="card">
+                <img 
+                    src="https://images.unsplash.com/photo-1580202313707-46a966af5c6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y290dGFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+                    alt="/"
+                >
+                <div>
+                    <div class="card-title">
+                        <h4 class="capitalize">city, state</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p class="capitalize"><span class="grey">hosted by reality group, LLC</span></p>
+                    <p class="capitalize"><span class="grey">Jun 1-7</span></p>
+                    <p>$749/night</p>
+                </div>
+            </div>
+            <!--PROPERTY 5-->
+            <div class="card">
+                <img 
+                    src="https://images.unsplash.com/photo-1491403865995-cda9c458c314?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fHRyYWRpc2lvbmFsJTIwaG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" 
+                    alt="/"
+                >
+                <div>
+                    <div class="card-title">
+                        <h4 class="capitalize">madonna di campiglio, trentino</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p class="capitalize"><span class="grey">hosted by reality group, LLC</span></p>
+                    <p class="capitalize"><span class="grey">Jun 1-7</span></p>
+                    <p>$749/night</p>
+                </div>
+            </div>
+            <!--PROPERTY 6-->
+            <div class="card">
+                <img 
+                    src="https://images.unsplash.com/photo-1504233529578-6d46baba6d34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fHRyYWRpc2lvbmFsJTIwaG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" 
+                    alt="/"
+                >
+                <div>
+                    <div class="card-title">
+                        <h4 class="capitalize">hamn&oslash;y, moskenes&oslash;ya</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p class="capitalize"><span class="grey">hosted by reality group, LLC</span></p>
+                    <p class="capitalize"><span class="grey">Jun 1-7</span></p>
+                    <p>$749/night</p>
+                </div>
+            </div>
+            <!--PROPERTY 7-->
+            <div class="card">
+                <img 
+                    src="https://images.unsplash.com/photo-1609319172668-8b4f021f3b7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNvdW50cnlzaWRlJTIwaG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" 
+                    alt="/"
+                >
+                <div>
+                    <div class="card-title">
+                        <h4 class="capitalize">mueang chiang mai district, chiang mai</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p class="capitalize"><span class="grey">hosted by reality group, LLC</span></p>
+                    <p class="capitalize"><span class="grey">Jun 1-7</span></p>
+                    <p>$749/night</p>
+                </div>
+            </div>
+            <!--PROPERTY 8-->
+            <div class="card">
+                <img 
+                    src="https://images.unsplash.com/photo-1580202313707-46a966af5c6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y290dGFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+                    alt="/"
+                >
+                <div>
+                    <div class="card-title">
+                        <h4 class="capitalize">city, state</h4>
+                        <p>5.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p class="capitalize"><span class="grey">hosted by reality group, LLC</span></p>
+                    <p class="capitalize"><span class="grey">Jun 1-7</span></p>
+                    <p>$749/night</p>
+                </div>
+            </div>
+        </div>
+
+        <!--FEATURED PROPERTIES-->
+        <div id="featured" class="featured">
+            <div class="title">
+                <h1 class="capitalize">featured</h1>
+            </div>
+            <div class="featured-wrapper">
+                <div class="main">
+                    <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y290dGFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y290dGFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y290dGFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y290dGFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y290dGFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--POPULAR PROPERTIES-->
+        <div id="popular" class="featured">
+            <div class="title">
+                <h1 class="capitalize">popular</h1>
+            </div>
+            <div class="featured-wrapper">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y290dGFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y290dGFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+                <div class="main">
+                    <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y290dGFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y290dGFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y290dGFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--SCROLL TO TOP-->
+        <div class="scroll-top">
+            <a href="#top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
+
+        <!--FOOTER-->
+        <footer>
+            <ul class="left-menu">
+                <li class="capitalize">air travel</li>
+                <li class="capitalize">privacy</li>
+                <li class="capitalize">terms</li>
+                <li class="capitalize">destinations</li>
+            </ul>
+            <ul class="rigt-menu">
+                <li class="capitalize">support</li>
+                <li class="capitalize">contacts</li>
+            </ul>
+        </footer>
+    </main>
+
+    <script>
+        const menuButton = document.querySelector('.mobile')
+        const navMenu = document.querySelector('.nav-menu')
+
+        const mobileMenu = () => {
+            menuButton.classList.toggle('active')
+            navMenu.classList.toggle('active')
+        }
+
+        const closeMenu = () => {
+            navMenu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
